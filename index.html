@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+    <head>
+        <title>Leitato Jones</title>
+        <meta charset="UTF-8">
+        <meta property="og:title" content="The Old Pond Rd" />
+        <meta property="og: description" content="Tales, imaginative tales.">
+        <meta name="description" content="Tales, imaginative tales.">
+        <meta name="keywords" content="Leitato Jones, writer, fiction, short stories, The Old Pond Rd">
+
+        <link rel="stylesheet" type="text/css" href="layout.css">
+        <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+    </head>
+
+    <!--moon photos from NASA: https://moon.nasa.gov/moon-in-motion/moon-phases -->
+
+    <body>
+
+        <div id="content">
+            <div id="circle">
+                <a href="https://stories.leitatojones.com" target="_blank">
+                <img src="" data-random-image="images/1.jpeg images/2.jpeg images/3.jpeg images/4.jpeg images/5.jpeg images/6.jpeg images/7.jpeg images/8.jpeg" alt="Substack" id="archetype">
+                <script>
+                    const image = document.querySelector('img[data-random-image]');
+                    const sources = image.dataset.randomImage.split(" ");
+                    const randomSource = sources[Math.floor(Math.random() * sources.length)]
+                    image.setAttribute('src', randomSource);
+                </script>    
+                </a>
+            
+                <audio crossorigin="anonymous"></audio>
+                <audio src="e13olf.mp3" autoplay></audio>  
+                <script>
+                    const audio = document.querySelector("audio");
+                    function Autoplay() {
+                        audio.autoplay = true;
+                        audio.load();  
+                    }
+                </script>
+            </div>
+        </div>
+
+    </body>
+</html>
